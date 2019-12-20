@@ -265,17 +265,13 @@ body{
                     font-size: 20px;
                     font-weight: 400;
                     margin:4px;
-                    background-color: $modalBg;
                     position: fixed;
                     top: 0;
                     right: 0;
-                    width: 30px;
+                    width: 80px;
                     height: 30px;
-                    border-radius: 5%;
                     text-align: center;
-                    line-height: 30px;
                     &:hover{
-                        background-color: $btnText;
                         color: $actIconHover;
                         transition:all 0.3s ease;
                     }
@@ -346,7 +342,7 @@ body{
                 justify-content: space-between;
             }
             .btnModal{
-                width: 40%;
+                width: 80px;
                 background-color: $btnBg;
                 color: $btnText;
                 height: 32px;
@@ -421,24 +417,11 @@ body{
             }
         }
         .buttons{
-            width: 100%;
             @include childFlex;
             justify-content: space-around;
             margin-top:20px;
         }
-        .btnModal{
-            width: 100px; 
-            background-color: rgb(11, 155, 47);
-            color: rgb(183, 240, 237);
-            height: 32px;
-            font-weight: 400;
-            font-size: 16px;
-            &:hover{
-                background-color:rgb(80, 206, 42);
-                color:rgb(3, 44, 42);
-                transition:all 0.3s ease;
-            } 
-        }
+        
     }
 }
         

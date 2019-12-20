@@ -16,41 +16,33 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 body {
   font-size: 16px;
@@ -59,444 +51,337 @@ body {
   flex-direction: column;
   width: 100%;
   margin-top: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-  color: #042725;
-}
-@media only screen and (max-width: 290px) {
-  body {
-    margin-top: 16px;
-  }
-}
-body .content {
-  position: relative;
-}
-body .container {
-  margin: 0 auto;
-  width: 80%;
-}
-@media only screen and (max-width: 700px) {
+  color: #042725; }
+  @media only screen and (max-width: 290px) {
+    body {
+      margin-top: 16px; } }
+  body .content {
+    position: relative; }
   body .container {
-    width: 96%;
-  }
-}
-body .container .headerTable {
-  display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  width: 100%;
-  background-color: #468b69;
-  height: 80px;
-}
-body .container .headerTable h2 {
-  display: flex;
-  flex-direction: row;
-  color: whitesmoke;
-  width: 60%;
-  padding: 24px;
-  font-size: 28px;
-  font-weight: bold;
-}
-@media only screen and (max-width: 700px) {
-  body .container .headerTable h2 {
-    font-size: 22px;
-    padding-bottom: 8px;
-  }
-}
-@media only screen and (max-width: 520px) {
-  body .container .headerTable h2 {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 290px) {
-  body .container .headerTable h2 {
-    font-size: 14px;
-  }
-}
-body .container .headerTable .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  background-color: #329e11;
-  color: #d8ece6;
-  height: 48px;
-  margin: 16px 5%;
-  font-family: cursive;
-}
-@media only screen and (max-width: 700px) {
-  body .container .headerTable .button {
-    font-size: 14px;
-    padding-right: 8px;
-    width: 35%;
-  }
-}
-@media only screen and (max-width: 520px) {
-  body .container .headerTable .button {
-    font-size: 12px;
+    margin: 0 auto;
+    width: 80%; }
+    @media only screen and (max-width: 700px) {
+      body .container {
+        width: 96%; } }
+    body .container .headerTable {
+      display: flex;
+      flex-direction: row;
+      font-size: 16px;
+      width: 100%;
+      background-color: #468b69;
+      height: 80px; }
+      body .container .headerTable h2 {
+        display: flex;
+        flex-direction: row;
+        color: whitesmoke;
+        width: 60%;
+        padding: 24px;
+        font-size: 28px;
+        font-weight: bold; }
+        @media only screen and (max-width: 700px) {
+          body .container .headerTable h2 {
+            font-size: 22px;
+            padding-bottom: 8px; } }
+        @media only screen and (max-width: 520px) {
+          body .container .headerTable h2 {
+            font-size: 18px; } }
+        @media only screen and (max-width: 290px) {
+          body .container .headerTable h2 {
+            font-size: 14px; } }
+      body .container .headerTable .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: #329e11;
+        color: #d8ece6;
+        height: 48px;
+        margin: 16px 5%;
+        font-family: cursive; }
+        @media only screen and (max-width: 700px) {
+          body .container .headerTable .button {
+            font-size: 14px;
+            padding-right: 8px;
+            width: 35%; } }
+        @media only screen and (max-width: 520px) {
+          body .container .headerTable .button {
+            font-size: 12px;
+            width: 30%;
+            height: 36px; } }
+        @media only screen and (max-width: 290px) {
+          body .container .headerTable .button {
+            font-size: 10px; } }
+        body .container .headerTable .button:hover {
+          background-color: #50ce2a;
+          color: #032c2a;
+          transition-delay: 8ms; }
+        body .container .headerTable .button .more {
+          margin: 8px;
+          border-radius: 50%;
+          background-color: #d8ece6;
+          color: #0b9b2f;
+          padding: 0 4px;
+          font-weight: bold; }
+          body .container .headerTable .button .more:hover {
+            background-color: #50ce2a;
+            color: #032c2a;
+            transition-delay: 8ms; }
+    body .container .searchFather {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      height: 60px;
+      margin-bottom: 16px; }
+      body .container .searchFather .search {
+        width: 30%;
+        margin: 16px;
+        border-radius: 20px;
+        outline: none;
+        background-color: whitesmoke;
+        border: 0;
+        padding: 20px; }
+        @media only screen and (max-width: 520px) {
+          body .container .searchFather .search {
+            width: 50%;
+            font-size: 12px; } }
+    body .container .table {
+      font-size: 14px;
+      border: 1px solid rgba(181, 213, 144, 0.5);
+      border-top: #468b69;
+      color: #468b69;
+      border-collapse: collapse;
+      background-color: #fff;
+      margin-left: auto;
+      margin-right: auto; }
+      @media only screen and (max-width: 290px) {
+        body .container .table {
+          font-size: 12px; } }
+      body .container .table td, body .container .table th {
+        padding: 8px;
+        border-bottom: 1px solid rgba(181, 213, 144, 0.5);
+        font-weight: 600; }
+        body .container .table td a, body .container .table th a {
+          text-decoration: none;
+          cursor: pointer;
+          color: #329e11; }
+          body .container .table td a:hover, body .container .table th a:hover {
+            color: #032c2a; }
+          body .container .table td a:first-of-type, body .container .table th a:first-of-type {
+            padding-right: 24px; }
+      body .container .table th {
+        background-color: #468b69;
+        color: #fff;
+        text-align: center; }
+      body .container .table td {
+        text-align: center; }
+        body .container .table td:first-of-type {
+          text-align: left; }
+      body .container .table tr:hover {
+        background: rgba(181, 213, 144, 0.2); }
+      body .container .table tr td:nth-child(2n) {
+        background: rgba(181, 213, 144, 0.2); }
+    body .container .tableContainer {
+      overflow-x: auto; }
+    body .container .table {
+      min-width: 900px;
+      width: 100%; }
+      body .container .table th:first-child {
+        width: 140px; }
+  body .modalWrapper {
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 100; }
+    body .modalWrapper .modal {
+      box-sizing: border-box;
+      width: 40%;
+      min-width: 385px;
+      max-width: 450px;
+      height: auto;
+      margin: 5% auto 5%;
+      background-color: #b8dda9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+      z-index: 200;
+      overflow: hidden; }
+      @media only screen and (max-width: 400px) {
+        body .modalWrapper .modal {
+          min-width: 240px;
+          max-width: 350px; } }
+      body .modalWrapper .modal .title {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5%;
+        background-color: #6dcc7d; }
+        body .modalWrapper .modal .title h2 {
+          font-size: 30px;
+          text-align: center;
+          line-height: 30px;
+          vertical-align: center; }
+          @media only screen and (max-width: 900px) {
+            body .modalWrapper .modal .title h2 {
+              font-size: 26px; } }
+          @media only screen and (max-width: 400px) {
+            body .modalWrapper .modal .title h2 {
+              font-size: 22px; } }
+        body .modalWrapper .modal .title a {
+          text-decoration: none;
+          cursor: pointer;
+          color: #329e11;
+          color: #0b9b2f;
+          font-size: 20px;
+          font-weight: 400;
+          margin: 4px;
+          background-color: #b8dda9;
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 80px;
+          height: 30px;
+          text-align: center; }
+          body .modalWrapper .modal .title a:hover {
+            color: #032c2a; }
+          body .modalWrapper .modal .title a:hover {
+            background-color: #b7f0ed;
+            color: #032c2a;
+            transition: all 0.3s ease; }
+      body .modalWrapper .modal .formContainer {
+        width: 100%; }
+        body .modalWrapper .modal .formContainer .inputGroup {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: left;
+          width: 80%;
+          margin: 5% 10%; }
+          body .modalWrapper .modal .formContainer .inputGroup .label {
+            font-size: 16px;
+            font-weight: 800;
+            margin-bottom: 4px; }
+          body .modalWrapper .modal .formContainer .inputGroup input {
+            height: 32px;
+            width: 100%;
+            color: #042725;
+            border: 1px solid #6f6f6f;
+            border-radius: 3px; }
+            body .modalWrapper .modal .formContainer .inputGroup input:focus {
+              outline: none;
+              border: 3px solid #6f6f6f;
+              box-shadow: #042725 5px 10px 10px; }
+            body .modalWrapper .modal .formContainer .inputGroup input .valid {
+              color: #3c3c3c;
+              font-size: 18px;
+              line-height: 22px;
+              background-color: #fbfbfb;
+              padding: 13px 13px 13px 54px;
+              margin-bottom: 10px;
+              width: 100%;
+              box-sizing: border-box; }
+            body .modalWrapper .modal .formContainer .inputGroup input .error {
+              color: red;
+              border: 2px solid darkred; }
+          body .modalWrapper .modal .formContainer .inputGroup div {
+            display: none; }
+            body .modalWrapper .modal .formContainer .inputGroup div.error {
+              display: block;
+              color: darkred;
+              height: 20px;
+              font-weight: 200;
+              font-size: 0.7em;
+              position: relative;
+              right: 0px;
+              top: -52px;
+              text-align: right; }
+      body .modalWrapper .modal .contentBtn {
+        width: 80%;
+        margin: 10% 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-between; }
+      body .modalWrapper .modal .btnModal {
+        width: 80px;
+        background-color: #0b9b2f;
+        color: #b7f0ed;
+        height: 32px;
+        font-weight: 400;
+        font-size: 16px; }
+        body .modalWrapper .modal .btnModal:hover {
+          background-color: #50ce2a;
+          color: #032c2a;
+          transition: all 0.3s ease; }
+  body .modalDelete {
     width: 30%;
-    height: 36px;
-  }
-}
-@media only screen and (max-width: 290px) {
-  body .container .headerTable .button {
-    font-size: 10px;
-  }
-}
-body .container .headerTable .button:hover {
-  background-color: #50ce2a;
-  color: #032c2a;
-  transition-delay: 8ms;
-}
-body .container .headerTable .button .more {
-  margin: 8px;
-  border-radius: 50%;
-  background-color: #d8ece6;
-  color: #0b9b2f;
-  padding: 0 4px;
-  font-weight: bold;
-}
-body .container .headerTable .button .more:hover {
-  background-color: #50ce2a;
-  color: #032c2a;
-  transition-delay: 8ms;
-}
-body .container .searchFather {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  height: 60px;
-  margin-bottom: 16px;
-}
-body .container .searchFather .search {
-  width: 30%;
-  margin: 16px;
-  border-radius: 20px;
-  outline: none;
-  background-color: whitesmoke;
-  border: 0;
-  padding: 20px;
-}
-@media only screen and (max-width: 520px) {
-  body .container .searchFather .search {
-    width: 50%;
-    font-size: 12px;
-  }
-}
-body .container .table {
-  font-size: 14px;
-  border: 1px solid rgba(181, 213, 144, 0.5);
-  border-top: #468b69;
-  color: #468b69;
-  border-collapse: collapse;
-  background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (max-width: 290px) {
-  body .container .table {
-    font-size: 12px;
-  }
-}
-body .container .table td, body .container .table th {
-  padding: 8px;
-  border-bottom: 1px solid rgba(181, 213, 144, 0.5);
-  font-weight: 600;
-}
-body .container .table td a, body .container .table th a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #329e11;
-}
-body .container .table td a:hover, body .container .table th a:hover {
-  color: #032c2a;
-}
-body .container .table td a:first-of-type, body .container .table th a:first-of-type {
-  padding-right: 24px;
-}
-body .container .table th {
-  background-color: #468b69;
-  color: #fff;
-  text-align: center;
-}
-body .container .table td {
-  text-align: center;
-}
-body .container .table td:first-of-type {
-  text-align: left;
-}
-body .container .table tr:hover {
-  background: rgba(181, 213, 144, 0.2);
-}
-body .container .table tr td:nth-child(2n) {
-  background: rgba(181, 213, 144, 0.2);
-}
-body .container .tableContainer {
-  overflow-x: auto;
-}
-body .container .table {
-  min-width: 900px;
-  width: 100%;
-}
-body .container .table th:first-child {
-  width: 140px;
-}
-body .modalWrapper {
-  background-color: rgba(0, 0, 0, 0.85);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  z-index: 100;
-}
-body .modalWrapper .modal {
-  box-sizing: border-box;
-  width: 40%;
-  min-width: 385px;
-  max-width: 450px;
-  height: auto;
-  margin: 5% auto 5%;
-  background-color: #b8dda9;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  z-index: 200;
-  overflow: hidden;
-}
-@media only screen and (max-width: 400px) {
-  body .modalWrapper .modal {
-    min-width: 240px;
-    max-width: 350px;
-  }
-}
-body .modalWrapper .modal .title {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 5%;
-  background-color: #6dcc7d;
-}
-body .modalWrapper .modal .title h2 {
-  font-size: 30px;
-  text-align: center;
-  line-height: 30px;
-  vertical-align: center;
-}
-@media only screen and (max-width: 900px) {
-  body .modalWrapper .modal .title h2 {
-    font-size: 26px;
-  }
-}
-@media only screen and (max-width: 400px) {
-  body .modalWrapper .modal .title h2 {
-    font-size: 22px;
-  }
-}
-body .modalWrapper .modal .title a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #329e11;
-  color: #0b9b2f;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 4px;
-  background-color: #b8dda9;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 5%;
-  text-align: center;
-  line-height: 30px;
-}
-body .modalWrapper .modal .title a:hover {
-  color: #032c2a;
-}
-body .modalWrapper .modal .title a:hover {
-  background-color: #b7f0ed;
-  color: #032c2a;
-  transition: all 0.3s ease;
-}
-body .modalWrapper .modal .formContainer {
-  width: 100%;
-}
-body .modalWrapper .modal .formContainer .inputGroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  width: 80%;
-  margin: 5% 10%;
-}
-body .modalWrapper .modal .formContainer .inputGroup .label {
-  font-size: 16px;
-  font-weight: 800;
-  margin-bottom: 4px;
-}
-body .modalWrapper .modal .formContainer .inputGroup input {
-  height: 32px;
-  width: 100%;
-  color: #042725;
-  border: 1px solid #6f6f6f;
-  border-radius: 3px;
-}
-body .modalWrapper .modal .formContainer .inputGroup input:focus {
-  outline: none;
-  border: 3px solid #6f6f6f;
-  box-shadow: #042725 5px 10px 10px;
-}
-body .modalWrapper .modal .formContainer .inputGroup input .valid {
-  color: #3c3c3c;
-  font-size: 18px;
-  line-height: 22px;
-  background-color: #fbfbfb;
-  padding: 13px 13px 13px 54px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-body .modalWrapper .modal .formContainer .inputGroup input .error {
-  color: red;
-  border: 2px solid darkred;
-}
-body .modalWrapper .modal .formContainer .inputGroup div {
-  display: none;
-}
-body .modalWrapper .modal .formContainer .inputGroup div.error {
-  display: block;
-  color: darkred;
-  height: 20px;
-  font-weight: 200;
-  font-size: 0.7em;
-  position: relative;
-  right: 0px;
-  top: -52px;
-  text-align: right;
-}
-body .modalWrapper .modal .contentBtn {
-  width: 80%;
-  margin: 10% 10%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  justify-content: space-between;
-}
-body .modalWrapper .modal .btnModal {
-  width: 40%;
-  background-color: #0b9b2f;
-  color: #b7f0ed;
-  height: 32px;
-  font-weight: 400;
-  font-size: 16px;
-}
-body .modalWrapper .modal .btnModal:hover {
-  background-color: #50ce2a;
-  color: #032c2a;
-  transition: all 0.3s ease;
-}
-body .modalDelete {
-  width: 30%;
-  height: 240px;
-  position: absolute;
-  margin: 80px 35%;
-  background-color: #83ee9e;
-  display: none;
-}
-@media only screen and (max-width: 900px) {
-  body .modalDelete {
-    width: 46%;
-    margin: 80px 28%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  body .modalDelete {
-    width: 60%;
-    margin: 80px 20%;
-  }
-}
-@media only screen and (max-width: 520px) {
-  body .modalDelete {
-    width: 80%;
-    margin: 40px 10%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  body .modalDelete {
-    width: 96%;
-    margin: 40px 2%;
-  }
-}
-body .modalDelete .title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  height: 80px;
-  background-color: #6dcc7d;
-}
-@media only screen and (max-width: 400px) {
-  body .modalDelete .title {
-    height: 60px;
-  }
-}
-body .modalDelete .title h2 {
-  font-size: 32px;
-  margin: 24px;
-}
-@media only screen and (max-width: 400px) {
-  body .modalDelete .title h2 {
-    font-size: 22px;
-  }
-}
-body .modalDelete .title a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #329e11;
-  color: 1px #031f1d;
-  font-size: 20px;
-  margin: 4px;
-}
-body .modalDelete .title a:hover {
-  color: #032c2a;
-}
-body .modalDelete .message {
-  width: 100%;
-  height: 80px;
-  text-align: center;
-}
-@media only screen and (max-width: 400px) {
-  body .modalDelete .message {
-    height: 100px;
-  }
-}
-body .modalDelete .message p {
-  padding-top: 16px;
-  font-size: 18px;
-}
-body .modalDelete .buttons {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-body .modalDelete .btnModal {
-  width: 100px;
-  background-color: #0b9b2f;
-  color: #b7f0ed;
-  height: 32px;
-  font-weight: 400;
-  font-size: 16px;
-}
-body .modalDelete .btnModal:hover {
-  background-color: #50ce2a;
-  color: #032c2a;
-  transition: all 0.3s ease;
-}
+    height: 240px;
+    position: absolute;
+    margin: 80px 35%;
+    background-color: #83ee9e;
+    display: none; }
+    @media only screen and (max-width: 900px) {
+      body .modalDelete {
+        width: 46%;
+        margin: 80px 28%; } }
+    @media only screen and (max-width: 700px) {
+      body .modalDelete {
+        width: 60%;
+        margin: 80px 20%; } }
+    @media only screen and (max-width: 520px) {
+      body .modalDelete {
+        width: 80%;
+        margin: 40px 10%; } }
+    @media only screen and (max-width: 400px) {
+      body .modalDelete {
+        width: 96%;
+        margin: 40px 2%; } }
+    body .modalDelete .title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      background-color: #6dcc7d; }
+      @media only screen and (max-width: 400px) {
+        body .modalDelete .title {
+          height: 60px; } }
+      body .modalDelete .title h2 {
+        font-size: 32px;
+        margin: 24px; }
+        @media only screen and (max-width: 400px) {
+          body .modalDelete .title h2 {
+            font-size: 22px; } }
+      body .modalDelete .title a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #329e11;
+        color: 1px #031f1d;
+        font-size: 20px;
+        margin: 4px; }
+        body .modalDelete .title a:hover {
+          color: #032c2a; }
+    body .modalDelete .message {
+      width: 100%;
+      height: 80px;
+      text-align: center; }
+      @media only screen and (max-width: 400px) {
+        body .modalDelete .message {
+          height: 100px; } }
+      body .modalDelete .message p {
+        padding-top: 16px;
+        font-size: 18px; }
+    body .modalDelete .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-content: space-around;
+      margin-top: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
